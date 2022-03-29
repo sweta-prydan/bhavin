@@ -1,0 +1,8 @@
+import { graphql } from "gatsby"
+
+export const fragments = graphql`fragment HeroImage on File {
+  childImageSharp {
+    gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+  }
+}
+`
